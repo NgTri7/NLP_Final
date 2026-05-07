@@ -1,0 +1,16 @@
+{
+  "BARTpho-word": {
+    "accuracy": 1.2,
+    "fluency": 2.067,
+    "coverage": 2.533,
+    "conciseness": 3.133,
+    "Model": "BARTpho-word"
+  },
+  "ViT5-base": {
+    "accuracy": 1.4,
+    "fluency": 2.6,
+    "coverage": 2.833,
+    "conciseness": 3.367,
+    "Model": "ViT5-base"
+  }
+}

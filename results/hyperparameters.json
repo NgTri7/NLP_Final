@@ -1,0 +1,35 @@
+{
+  "BARTpho-word": {
+    "base_model": "vinai/bartpho-word",
+    "method": "LoRA",
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "epochs": 20,
+    "lr": "2e-4",
+    "batch": "4x4=16",
+    "num_beams": 4,
+    "length_penalty": 0.8,
+    "constraints": "constrained decoding + copy mechanism"
+  },
+  "ViT5-base": {
+    "base_model": "VietAI/vit5-base",
+    "method": "LoRA",
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "target_modules": [
+      "q",
+      "v"
+    ],
+    "task_prefix": "tóm tắt: ",
+    "epochs": 20,
+    "lr": "2e-4",
+    "batch": "4x4=16",
+    "num_beams": 4,
+    "length_penalty": 0.8,
+    "constraints": "constrained decoding + copy mechanism"
+  }
+}
